@@ -116,3 +116,63 @@ div.bottom p {
     font-size: x-small;
     color: white;
 }
+
+@media all and (max-width: 765px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    section.wrapper {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    div.container {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 80% 10%;
+    }
+    div.top {
+        grid-column: span 1;
+        grid-row: 1/2;
+        width: 100%;
+    }
+    div.top p {
+        font-size: 3vw;
+    }
+    /* div.top nav ul {
+        font-size: xx-small;
+    } */
+    div.top nav ul li {
+        margin: 1%;
+        font-size: 3vw;
+    }
+    div.top nav ul button {
+        width: 100%;
+        height: 3em;
+    }
+    div.mid {
+        grid-row: 2/3;
+        grid-column: span 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+    div.mid p,
+    div.mid h1 {
+        position: static;
+        width: 100%;
+    }
+    div.bottom {
+        grid-row: 3/4;
+        grid-column: span 1;
+    }
+}
