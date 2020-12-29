@@ -167,7 +167,7 @@ div.bottom p {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: black;
     }
     div.mid p,
     div.mid h1 {
@@ -199,11 +199,12 @@ div.bottom p {
     div.top nav button.hidden {
         display: block;
         display: flex;
-        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         height: 30%;
         border: none;
-        background-color: rgb(228, 155, 104);
+        background-color: transparent;
         outline: none;
     }
     div.top div.line {
